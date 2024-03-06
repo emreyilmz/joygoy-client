@@ -1,0 +1,492 @@
+import { Video } from "expo-av";
+import React, {
+    useRef,
+    forwardRef,
+    useImperativeHandle,
+    useEffect,
+    useState
+} from "react";
+import { AntDesign, Ionicons, Entypo, FontAwesome ,MaterialIcons} from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+import { useSelector, useDispatch } from "react-redux";
+import { InterstitialAd, TestIds, AdEventType } from 'react-native-google-mobile-ads';
+const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : 'ca-app-pub-5283178968139478/3557845324';
+
+const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+  requestNonPersonalizedAdsOnly: true,
+  keywords: ['fashion', 'clothing'],
+});
+
+
+const staticImage = require("../../../assets/j.png");
+
+import {
+    View,
+    Text,
+    TouchableWithoutFeedback,
+    StyleSheet,
+    TouchableOpacity,
+    Dimensions,
+    Button,
+    Image,
+} from "react-native";
+
+export const PostSingle = forwardRef(
+    (
+        {
+            item,
+            wordObj,
+            doSomething,
+            dontSomething,
+            showText,
+            showOrHide,
+            showTranslate,
+            showOrHideTranslate,
+            playOrStop,
+            flat,
+            soundOrMute,
+            sound,
+            Index,
+            premium
+        },
+        parentRef
+    ) => {
+        const ref = useRef(null);
+
+        const navigation = useNavigation();
+    const language = useSelector((state) => state.AuthReducers.authLanguage);
+   
+    
+
+   
+
+    const [loaded, setLoaded] = useState(false);
+
+    const getAds = () => {
+        console.log("function")
+        const unsubscribe = interstitial.addAdEventListener(AdEventType.LOADED, () => {
+            setLoaded(true);
+            interstitial.show();
+    
+          });
+      
+          // Start loading the interstitial straight away
+          interstitial.load();
+      
+          // Unsubscribe from events on unmount
+          return unsubscribe;
+    }
+
+    useEffect(() => {
+       /*  console.log(Index) */
+       if (Index%9 === 0 && Index>1) {
+        if(premium){
+
+        }else {
+            
+            getAds();
+        }
+      }else {
+        console.log(Index)
+      }
+      /*  */
+    }, []); 
+
+        /* console.log(item[language]) */
+
+
+        useImperativeHandle(parentRef, () => ({
+            play,
+            unload,
+            stop,
+        }));
+
+        
+
+        useEffect(() => {
+            return () => unload();
+        }, []);
+
+        const play = async () => {
+            if (ref.current == null) {
+                return;
+            }
+
+            // if video is already playing return
+            const status = await ref.current.getStatusAsync();
+            if (status?.isPlaying) {
+                return;
+            }
+            try {
+                await ref.current.playAsync();
+            } catch (e) {
+                console.log(e);
+            }
+        };
+
+        const stop = async () => {
+            if (ref.current == null) {
+                return;
+            }
+
+            // if video is already stopped return
+            const status = await ref.current.getStatusAsync();
+            if (!status?.isPlaying) {
+                return;
+            }
+            try {
+                await ref.current.stopAsync();
+            } catch (e) {
+                console.log(e);
+            }
+        };
+
+        const unload = async () => {
+            console.log("unload");
+            if (ref.current == null) {
+                return;
+            }
+
+            // if video is already stopped return
+            try {
+                await ref.current.unloadAsync();
+            } catch (e) {
+                console.log(e);
+            }
+        };
+
+        const toggle = async () => {
+            if (ref.current == null) {
+                return;
+            }
+            const status = await ref.current.getStatusAsync();
+
+            if (status?.isPlaying) {
+                stop();
+            } else {
+                play();
+            }
+        };
+
+        React.useEffect(() => {
+            const unsubscribe = navigation.addListener("focus", () => {
+                console.log("Focus");
+                //Every time the screen is focused the Video starts playing
+                /* if (ref.current) {
+                    play();
+                } */
+            });
+
+            return unsubscribe;
+        }, [navigation]);
+
+        //Blur Event: to be fired when the HomeScreen loses focus.
+        React.useEffect(() => {
+            const unsubscribe = navigation.addListener("blur", () => {
+                console.log("Blur");
+                //Every time the screen loses focus the Video is paused
+                if (ref) {
+                    stop();
+                }
+            });
+
+            return unsubscribe;
+        }, [navigation]);
+
+        return (
+            <TouchableWithoutFeedback onPress={() => toggle()} key={item._id}>
+                <View style={styles.container} key={item._id}>
+                    <View style={styles.container}>
+                        <Video
+                            ref={ref}
+                            style={styles.container}
+                            source={{
+                                uri:
+                                    "https://aws-joygoy-s3.s3.eu-central-1.amazonaws.com/" +
+                                    item?.number +
+                                    ".mp4",
+                            }}
+                            resizeMode="cover"
+                            //shouldPlay={playSho ? true : false}
+                            //useNativeControls
+                            isLooping
+                            isMuted={sound}
+                            //onPlaybackStatusUpdate={setStatus}
+                        />
+                    </View>
+
+                    <View style={styles.container2}>
+                        <View style={[styles.header,{paddingTop:premium?100:150}]}>
+                            <TouchableOpacity
+                                style={styles.deneme}
+                                onPress={() => navigation.goBack()}
+                            >
+                                <AntDesign
+                                    name="arrowleft"
+                                    size={28}
+                                    color="white"
+                                />
+                            </TouchableOpacity>
+                            <TouchableWithoutFeedback
+                                onPress={() => playOrStop()}
+                                style={{
+                                    color: "red",
+                                    padding: 5,
+                                }}
+                            >
+                                <FontAwesome
+                                    style={{
+                                        padding: 5,
+                                    }}
+                                    name={flat ? "play" : "pause"}
+                                    size={22}
+                                    color="#fff"
+                                />
+                            </TouchableWithoutFeedback>
+                        </View>
+
+                        <View style={styles.subtitle}>
+                            <View
+                                style={{
+                                    flexDirection: "row",
+                                    justifyContent: "space-between",
+                                    marginBottom: 50,
+                                }}
+                            >
+                                <TouchableWithoutFeedback
+                                    onPress={() => dontSomething()}
+                                    style={{
+                                        color: "red",
+                                        padding: 5,
+                                    }}
+                                >
+                                    <AntDesign
+                                        style={{
+                                            marginLeft: 5,
+                                            padding: 5,
+                                        }}
+                                        name={"left"}
+                                        size={28}
+                                        color="white"
+                                    />
+                                </TouchableWithoutFeedback>
+                                <TouchableWithoutFeedback
+                                    onPress={() => doSomething()}
+                                    style={{
+                                        color: "red",
+                                        padding: 5,
+                                    }}
+                                >
+                                    <AntDesign
+                                        style={{
+                                            marginLeft: 5,
+                                            padding: 5,
+                                        }}
+                                        name={"right"}
+                                        size={28}
+                                        color="white"
+                                    />
+                                </TouchableWithoutFeedback>
+                            </View>
+
+                            {showText ? (
+                                <Text
+                                    style={[
+                                        styles.text2,
+                                        ,
+                                        { marginBottom: 10 },
+                                    ]}
+                                >
+                                    {item.text}
+                                </Text>
+                            ) : null}
+
+                            {showTranslate ? (
+                                <Text style={[styles.text3]}>{item[language]}</Text>
+                            ) : null}
+                        </View>
+
+                        <View style={styles.bottom}>
+                            <View style={styles.bottomSection}>
+                                <Image
+                                    style={styles.avatar}
+                                    source={staticImage}
+                                />
+
+
+                                <View style={styles.bottomText}>
+                                    {showText ? (
+                                        <Text style={styles.displayName}>
+                                            {wordObj.word}
+                                        </Text>
+                                    ) : null}
+
+                                    {showTranslate ? (
+                                        <Text style={styles.description}>
+                                            {wordObj[language]}
+                                        </Text>
+                                    ) : null}
+                                </View>
+                            </View>
+                            <View style={styles.eyes}>
+                                <TouchableWithoutFeedback
+                                    onPress={() => showOrHideTranslate()}
+                                    style={{
+                                        color: "red",
+                                        padding: 5,
+                                    }}
+                                >
+                                    <MaterialIcons 
+                                    style={{
+                                        marginLeft: 15,
+                                        padding: 5,
+                                    }}
+                                    name={
+                                            showTranslate
+                                                ? "closed-caption"
+                                                : "closed-caption-disabled"
+                                        } size={28} color="#1DB954" />
+                                </TouchableWithoutFeedback>
+                                <TouchableWithoutFeedback
+                                    onPress={() => showOrHide()}
+                                    style={{
+                                        color: "red",
+                                        padding: 5,
+                                    }}
+                                >
+                                    <MaterialIcons
+                                        style={{
+                                            marginLeft: 15,
+                                            padding: 5,
+                                        }}
+                                        name={
+                                            showText
+                                                ? "closed-caption"
+                                                : "closed-caption-disabled"
+                                        }
+                                        size={28}
+                                        color="white"
+                                    />
+                                </TouchableWithoutFeedback>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+            </TouchableWithoutFeedback>
+        );
+    }
+);
+
+export default PostSingle;
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        width: Dimensions.get("window").width,
+        height: Dimensions.get("window").height,
+        justifyContent: "space-between",
+    },
+    eyes: {
+        //flex: 1,
+        flexShrink: 3,
+        flexDirection: "row",
+    },
+    container2: {
+        //marginTop: Constants.statusBarHeight,
+        width: Dimensions.get("window").width,
+        height: Dimensions.get("window").height,
+        position: "absolute",
+        bottom: 0,
+        //padding: 20,
+        paddingTop: 5,
+        //paddingLeft: 15,
+
+        flexDirection: "column",
+        justifyContent: "space-between",
+    },
+    header: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginHorizontal: 15,
+    },
+    deneme: {
+        //paddingTop: 35,
+        /* paddingTop: 20,
+        marginLeft: 15, */
+    },
+    text: {
+        color: "red",
+        fontSize: 24,
+        fontWeight: "bold",
+    },
+    text2: {
+        color: "white",
+        fontSize: 19,
+        fontWeight: "bold",
+        textAlign: "center",
+        backgroundColor: "rgba(0, 0, 0, 0.8)",
+
+        zIndex: 999,
+    },
+    text3: {
+        color: "#1DB954",
+        fontSize: 17,
+        fontWeight: "bold",
+        textAlign: "center",
+        backgroundColor: "rgba(0, 0, 0, 0.7)",
+
+        zIndex: 999,
+    },
+    subtitle: {
+        //backgroundColor:"black",
+        //marginTop: 250,
+        //backgroundColor:'rgba(0, 0, 0, 0.5)',
+        /* marginHorizontal: 15, */
+        marginTop: 120,
+    },
+    bottom: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginTop: 20,
+        marginBottom:40,
+        marginHorizontal: 15,
+    },
+    bottomSection: {
+        flexDirection: "row",
+        justifyContent: "flex-start",
+    },
+    bottomText: {
+        justifyContent: "center",
+        alignItems: "flex-start",
+    },
+    displayName: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 19,
+        marginTop: -1,
+    },
+    description: {
+
+        marginTop: -2,
+        color: "#1DB954",
+        fontSize: 15,
+        fontWeight: "bold",
+        width: 150,
+    },
+    avatar: {
+        marginRight: 15, 
+        height: 50,
+        width: 50,
+         
+       /*  borderRadius: 50,
+       borderWidth: 2,
+        borderColor: "white", 
+        */
+    },
+    plusIcon: {
+        height: 35,
+        width: 35,
+        borderRadius: 10,
+    },
+});

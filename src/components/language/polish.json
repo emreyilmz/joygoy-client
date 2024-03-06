@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "PremiumHeader":"Uzyskaj członkostwo premium, aby uzyskać nieograniczony dostęp.",
+        "PremiumDescription":"Oglądaj bez ograniczeń, twórz własne listy słów, korzystaj ze wszystkich funkcji bez reklam na wszystkich swoich urządzeniach. Anuluj w dowolnym momencie.",
+        "PremiumMonth":"miesięczny",
+        "PackageSub":"pakiet abonamentowy",
+        "BuySub":"Uzyskaj członkostwo premium",
+        "PremiumYear":"rocznie",
+        "PremiumCancel":"Możesz zrezygnować z płatności Google w dowolnym momencie.",
+        "MeInvite":"Zaproś swoich znajomych",
+        "MeReview":"Kup Joygoy premium",
+        "Guest":"Gość",
+        "Created_Time":"dołączył kilka dni temu",
+        "Video":"ucz się angielskiego z wideo",
+        "Settings":"Ustawienia",
+        "Settings_Delete":"Usuń konto",
+        "Settings_Exit":"Wyloguj się",
+        "Settings_Delete_Desc":"Czy na pewno chcesz usunąć swoje konto?",
+        "Settings_Delete_Yes":"tak",
+        "Settings_Delete_No":"Nie",
+        "Review_Header":"Proszę oceń nas",
+        "Review_rate":"Oceń aplikację",
+        "Review_PlaceHolder":"Tutaj możesz napisać swoje przemyślenia..",
+        "Review_SendButton":"Wysłać",
+        "Review_CancelButton":"anulować",
+        "SearchWord":"wyszukaj słowo",
+        "LoginHeader":"Zarejestruj się, aby utworzyć listę słów.",
+        "SignIn":"Zaloguj sie",
+        "SignUp":"Zapisz się",
+        "AddList":"Sporządzać listę",
+        "AddList_Place":"Wpisz nazwę listy",
+        "AddWord":"Zbuduj Słowo",
+        "AddWord_Place":"Wpisz nazwę słowa",
+        "Your_Lanaguage":"Twój język",
+        "Information":"Informacja",
+        "VideoNotFound":"Nie znaleziono wideo dla tego słowa",
+        "VideoNotFound_Desc":"Codziennie przesyłamy więcej filmów",
+        "AdsRemove":"Usuń reklamy",
+        "BuyPremium":"Kup subskrypcję, aby zobaczyć ten obszar..",
+        "BuyPremiumButton":"Subskrybuj",
+
+        "WordCount":"Liczba słów",
+        "Word":"Słowo",
+        "WordList":"Listy słów",
+        "Words":"Słowa",
+        "PremiumAddInformation":"Wesprzyj nas, abyśmy mogli sprostać wysokim kosztom serwera.",
+        "Word_Add":"Dodaj Worda"
+
+
+    }
+    
+}

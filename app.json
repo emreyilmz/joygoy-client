@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Joygoy",
+    "slug": "Joygoy",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "version": "2022.12.7",
+    "orientation": "portrait",
+    "icon": "./assets/j.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": [
+        "com.android.vending.INTERNET",
+        "com.android.vending.BILLING"
+
+      ],
+      "package": "com.Joygoy.Joygoy",
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-5283178968139478/3575098172"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5b5e96e0-1628-4b84-a25c-8f8baaecce61"
+      }
+    },
+    "plugins": [
+      "expo-build-properties"
+    ]
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-5283178968139478~6236728649"
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "PremiumHeader":"Ottieni un abbonamento premium per un accesso illimitato.",
+        "PremiumDescription":"Guarda senza limiti, crea i tuoi elenchi di parole, accedi a tutte le funzionalità senza pubblicità su tutti i tuoi dispositivi. Annulla in qualsiasi momento.",
+        "PremiumMonth":"mensile",
+        "PackageSub":"pacchetto di abbonamento",
+        "BuySub":"Ottieni un abbonamento premium",
+        "PremiumYear":"annuale",
+        "PremiumCancel":"Puoi annullare i pagamenti Google in qualsiasi momento.",
+        "MeInvite":"Invita i tuoi amici",
+        "MeReview":"Acquista Joygoy premium",
+        "Guest":"Ospite",
+        "Created_Time":"iscritto giorni fa",
+        "Video":"imparare l'inglese con il video",
+        "Settings":"Impostazioni",
+        "Settings_Delete":"eliminare l'account",
+        "Settings_Exit":"disconnessione",
+        "Settings_Delete_Desc":"Sei sicuro di voler eliminare il tuo account?",
+        "Settings_Delete_Yes":"sì",
+        "Settings_Delete_No":"No",
+        "Review_Header":"Per favore, valutaci",
+        "Review_rate":"Valuta l'app",
+        "Review_PlaceHolder":"Puoi scrivere qui i tuoi pensieri..",
+        "Review_SendButton":"Spedire",
+        "Review_CancelButton":"Annulla",
+        "SearchWord":"parola di ricerca",
+        "LoginHeader":"Iscriviti per creare un elenco di parole.",
+        "SignIn":"Login",
+        "SignUp":"Iscriviti",
+        "AddList":"Crea lista",
+        "AddList_Place":"Scrivi il nome della lista",
+        "AddWord":"Costruisci parola",
+        "AddWord_Place":"Scrivi la parola nome",
+        "Your_Lanaguage":"La tua lingua",
+        "Information":"Informazione",
+        "VideoNotFound":"Nessun video trovato per questa parola",
+        "VideoNotFound_Desc":"Continuiamo a caricare più video ogni giorno",
+        "AdsRemove":"Rimuovere gli annunci",
+        "BuyPremium":"Si prega di acquistare un abbonamento per vedere quest'area..",
+        "BuyPremiumButton":"sottoscrivi",
+
+        "WordCount":"Conteggio parole",
+        "Word":"Parola",
+        "WordList":"Elenchi di parole",
+        "Words":"Parole",
+        "PremiumAddInformation":"Sostienici in modo che possiamo soddisfare gli elevati costi del server.",
+        "Word_Add":"Aggiungi parola"
+
+
+    }
+    
+}

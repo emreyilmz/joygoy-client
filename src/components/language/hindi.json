@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "PremiumHeader":"असीमित पहुंच के लिए प्रीमियम सदस्यता प्राप्त करें.",
+        "PremiumDescription":"असीमित देखें, अपनी स्वयं की शब्द सूचियां बनाएं, अपने सभी उपकरणों पर विज्ञापन-मुक्त सभी सुविधाओं तक पहुंचें। जब चाहो रद्द कर दो।",
+        "PremiumMonth":"महीने के",
+        "PackageSub":"सदस्यता पैकेज",
+        "BuySub":"प्रीमियम सदस्यता प्राप्त करें",
+        "PremiumYear":"सालाना",
+        "PremiumCancel":"आप किसी भी समय Google Payments से रद्द कर सकते हैं।",
+        "MeInvite":"अपने दोस्तों को आमंत्रित करो",
+        "MeReview":"जॉयगॉय प्रीमियम खरीदें",
+        "Guest":"अतिथि",
+        "Created_Time":"दिन पहले ज्वाइन किया",
+        "Video":"वीडियो के साथ अंग्रेजी सीखें",
+        "Settings":"समायोजन",
+        "Settings_Delete":"खाता हटा दो",
+        "Settings_Exit":"प्रस्थान करें",
+        "Settings_Delete_Desc":"क्या आप इस खाते को हटाने के लिए सुनिश्चित हैं?",
+        "Settings_Delete_Yes":"हां",
+        "Settings_Delete_No":"नहीं",
+        "Review_Header":"कृपया हमें रेट करें",
+        "Review_rate":"एप्लिकेशन की श्रेणी बताओ",
+        "Review_PlaceHolder":"आप अपने विचार यहां लिख सकते हैं।.",
+        "Review_SendButton":"भेजना",
+        "Review_CancelButton":"रद्द करना",
+        "SearchWord":"खोज शब्द",
+        "LoginHeader":"शब्द सूची बनाने में सक्षम होने के लिए साइन अप करें।.",
+        "SignIn":"लॉग इन करें",
+        "SignUp":"साइन अप करें",
+        "AddList":"सूची बनाएं",
+        "AddList_Place":"सूची का नाम लिखें",
+        "AddWord":"वर्ड बनाएँ",
+        "AddWord_Place":"शब्द का नाम लिखिए",
+        "Your_Lanaguage":"आपकी भाषा",
+        "Information":"जानकारी",
+        "VideoNotFound":"इस शब्द के लिए कोई वीडियो नहीं मिला",
+        "VideoNotFound_Desc":"हम हर दिन और वीडियो अपलोड करते रहते हैं",
+        "AdsRemove":"विज्ञापन हटाएँ",
+        "BuyPremium":"कृपया इस क्षेत्र को देखने के लिए सदस्यता खरीदें।.",
+        "BuyPremiumButton":"सदस्यता लेने के",
+
+        "WordCount":"शब्द गणना",
+        "Word":"शब्द",
+        "WordList":"शब्द सूचियाँ",
+        "Words":"शब्द",
+        "PremiumAddInformation":"हमारा समर्थन करें ताकि हम उच्च सर्वर लागतों को पूरा कर सकें।",
+        "Word_Add":"वर्ड जोड़ें"
+
+
+    }
+    
+}

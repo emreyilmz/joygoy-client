@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "PremiumHeader":"무제한 액세스를 위한 프리미엄 회원 가입.",
+        "PremiumDescription":"무제한으로 시청하고, 나만의 단어 목록을 만들고, 모든 기기에서 광고 없이 모든 기능에 액세스하세요. 원할 때마다 취소하십시오.",
+        "PremiumMonth":"월간 간행물",
+        "PackageSub":"구독 패키지",
+        "BuySub":"프리미엄 멤버십 받기",
+        "PremiumYear":"매년",
+        "PremiumCancel":"언제든지 Google 결제에서 취소할 수 있습니다..",
+        "MeInvite":"친구 초대",
+        "MeReview":"Joygoy 프리미엄 구매",
+        "Guest":"손님",
+        "Created_Time":"일 전에 가입",
+        "Video":"비디오로 영어를 배우다",
+        "Settings":"설정",
+        "Settings_Delete":"계정 삭제",
+        "Settings_Exit":"로그아웃",
+        "Settings_Delete_Desc":"계정을 삭제하시겠습니까?",
+        "Settings_Delete_Yes":"예",
+        "Settings_Delete_No":"아니",
+        "Review_Header":"우리를 평가하십시오",
+        "Review_rate":"앱 평가",
+        "Review_PlaceHolder":"당신은 여기에 당신의 생각을 쓸 수 있습니다..",
+        "Review_SendButton":"보내다",
+        "Review_CancelButton":"취소",
+        "SearchWord":"검색어",
+        "LoginHeader":"단어 목록을 만들려면 가입하세요.",
+        "SignIn":"로그인",
+        "SignUp":"가입하기",
+        "AddList":"목록 만들기",
+        "AddList_Place":"목록 이름 쓰기",
+        "AddWord":"단어 만들기",
+        "AddWord_Place":"단어 이름 쓰기",
+        "Your_Lanaguage":"당신의 언어",
+        "Information":"정보",
+        "VideoNotFound":"이 단어에 대한 동영상을 찾을 수 없습니다.",
+        "VideoNotFound_Desc":"우리는 매일 더 많은 비디오를 계속 업로드합니다",
+        "AdsRemove":"광고를 제거하다",
+        "BuyPremium":"이 지역을 보려면 구독을 구매하세요..",
+        "BuyPremiumButton":"구독하다",
+
+        "WordCount":"단어 수",
+        "Word":"단어",
+        "WordList":"단어 목록",
+        "Words":"단어",
+        "PremiumAddInformation":"높은 서버 비용을 감당할 수 있도록 지원해 주십시오.",
+        "Word_Add":"단어 추가"
+
+
+    }
+    
+}

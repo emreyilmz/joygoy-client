@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "PremiumHeader":"Get premium membership for unlimited access.",
+        "PremiumDescription":"Watch unlimited, create your own word lists, access all features ad-free on all your devices. Cancel anytime.",
+        "PremiumMonth":"monthly",
+        "PackageSub":"subscription package",
+        "BuySub":"Get premium membership",
+        "PremiumYear":"yearly",
+        "PremiumCancel":"You can cancel from Google payments at any time.",
+        "MeInvite":"Invite your friends",
+        "MeReview":"Buy Joygoy premium",
+        "Guest":"Guest",
+        "Created_Time":"joined days ago",
+        "Video":"learn english with videos",
+        "Settings":"Settings",
+        "Settings_Delete":"delete account",
+        "Settings_Exit":"Sign out",
+        "Settings_Delete_Desc":"Are you sure you want to delete your account?",
+        "Settings_Delete_Yes":"Yes",
+        "Settings_Delete_No":"No",
+        "Review_Header":"Please Rate Us",
+        "Review_rate":"Rate the App",
+        "Review_PlaceHolder":"You can write your thoughts here..",
+        "Review_SendButton":"Send",
+        "Review_CancelButton":"Cancel",
+        "SearchWord":"search word",
+        "LoginHeader":"Sign up to be able to create a word list.",
+        "SignIn":"Login",
+        "SignUp":"Sign up",
+        "AddList":"Create List",
+        "AddList_Place":"Write the list name",
+        "AddWord":"Build Word",
+        "AddWord_Place":"Write the word name",
+        "Your_Lanaguage":"Your language",
+        "Information":"Information",
+        "VideoNotFound":"No video found for this word",
+        "VideoNotFound_Desc":"We keep uploading more videos every day",
+        "AdsRemove":"Remove Ads",
+        "BuyPremium":"Please purchase a subscription to see this area..",
+        "BuyPremiumButton":"Subscribe",
+
+        "WordCount":"Word Count",
+        "Word":"Word",
+        "WordList":"Word Lists",
+        "Words":"Words",
+        "PremiumAddInformation":"Support us so that we can meet the high server costs.",
+        "Word_Add":"Add Word"
+        
+
+    }
+    
+}

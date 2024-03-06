@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "PremiumHeader":"Neem een ​​premium lidmaatschap voor onbeperkte toegang.",
+        "PremiumDescription":"Kijk onbeperkt, maak je eigen woordenlijsten, krijg toegang tot alle functies zonder advertenties op al je apparaten. Annuleer op elk moment.",
+        "PremiumMonth":"maandelijks",
+        "PackageSub":"abonnement pakket",
+        "BuySub":"Neem een ​​premium lidmaatschap",
+        "PremiumYear":"jaarlijks",
+        "PremiumCancel":"U kunt Google-betalingen op elk gewenst moment annuleren.",
+        "MeInvite":"Nodig je vrienden uit",
+        "MeReview":"Koop Joygoy-premie",
+        "Guest":"Gast",
+        "Created_Time":"dagen geleden lid geworden",
+        "Video":"Engels leren met video",
+        "Settings":"Instellingen",
+        "Settings_Delete":"account verwijderen",
+        "Settings_Exit":"Afmelden",
+        "Settings_Delete_Desc":"Weet je zeker dat je je account wilt verwijderen?",
+        "Settings_Delete_Yes":"Ja",
+        "Settings_Delete_No":"Nee",
+        "Review_Header":"Beoordeel ons alstublieft",
+        "Review_rate":"Beoordeel de app",
+        "Review_PlaceHolder":"U kunt hier uw gedachten opschrijven..",
+        "Review_SendButton":"Versturen",
+        "Review_CancelButton":"Annuleren",
+        "SearchWord":"zoek woord",
+        "LoginHeader":"Meld u aan om een ​​woordenlijst te maken.",
+        "SignIn":"Log in",
+        "SignUp":"Aanmelden",
+        "AddList":"Lijst maken",
+        "AddList_Place":"Schrijf de lijstnaam",
+        "AddWord":"Bouw woord",
+        "AddWord_Place":"Schrijf de woordnaam",
+        "Your_Lanaguage":"Uw taal",
+        "Information":"Informatie",
+        "VideoNotFound":"Geen video gevonden voor dit woord",
+        "VideoNotFound_Desc":"We blijven elke dag meer video's uploaden",
+        "AdsRemove":"Verwijder advertenties",
+        "BuyPremium":"Koop een abonnement om dit gebied te zien.",
+        "BuyPremiumButton":"Abonneren",
+
+        "WordCount":"Aantal woorden",
+        "Word":"Woord",
+        "WordList":"Woordenlijsten",
+        "Words":"Woorden",
+        "PremiumAddInformation":"Steun ons zodat we de hoge serverkosten kunnen opvangen.",
+        "Word_Add":"Woord toevoegen"
+
+
+    }
+    
+}
